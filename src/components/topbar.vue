@@ -202,7 +202,7 @@
 
 <script>
     export default {
-        name: "topbar"
+        name: "Topbar"
     }
 </script>
 

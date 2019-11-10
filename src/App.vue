@@ -3,8 +3,8 @@
 </template>
 
 <script>
-    import componentBottom from './views/componentBottom.vue'
-    import Dashboard from './views/Dashboard.vue'
+    import componentBottom from './components/componentBottom.vue'
+    import Dashboard from './components/Dashboard.vue'
 
     export default {
         name: 'app',

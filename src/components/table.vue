@@ -22,8 +22,8 @@
 </template>
 
 <script>
-    import OrderList from './order/orderList'
-    import Shop from './shop/shop'
+    import OrderList from '../views/order/orderList'
+    import Shop from '../views/shop/shop'
 
     export default {
         name: "Table",

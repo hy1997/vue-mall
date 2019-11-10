@@ -13,7 +13,7 @@
                 </a>
                 <!-- 分割线 -->
                 <hr class="sidebar-divider my-0">
-                <!-- Nav Item - Dashboard -->
+
                 <li class="nav-item active">
                     <a class="nav-link" href="/index">
                         <i class="fas fa-fw fa-tachometer-alt"></i>
@@ -23,34 +23,9 @@
                 <hr class="sidebar-divider">
                 <!--菜单列表-->
                 <Table/>
-
-                <!-- Divider -->
-                <hr class="sidebar-divider">
-
-                <!-- Nav Item - Charts -->
-                <li class="nav-item">
-                    <a class="nav-link" href="../../../../Downloads/startbootstrap-sb-admin-2-gh-pages/charts.html">
-                        <i class="fas fa-fw fa-chart-area"></i>
-                        <span>Charts</span></a>
-                </li>
-                <!-- Nav Item - Tables -->
-                <li class="nav-item">
-                    <a class="nav-link" href="../../../../Downloads/startbootstrap-sb-admin-2-gh-pages/tables.html">
-                        <i class="fas fa-fw fa-table"></i>
-                        <span>Tables</span></a>
-                </li>
-                <!-- Divider -->
-                <hr class="sidebar-divider d-none d-md-block">
-                <!-- Sidebar Toggler (Sidebar) -->
-                <div class="text-center d-none d-md-inline">
-                    <button class="rounded-circle border-0" id="sidebarToggle"></button>
-                </div>
+                <Addons/>
             </ul>
-            <!-- End of Sidebar -->
-            <Addons></Addons>
-            <!-- Content Wrapper -->
             <div id="content-wrapper" class="d-flex flex-column">
-                <!-- Main Content -->
                    <!--上导航栏-->
                 <Topbar></Topbar>
                 <!--右边页面vue组件-->
@@ -68,11 +43,11 @@
 </template>
 
 <script>
-    import Dashboard from '../../views/Dashboard.vue'
+    import Dashboard from '../../components/Dashboard.vue'
     import Footer from './footer.vue'
-    import Table from '../table'
-    import Topbar from '../topbar'
-    import Addons from '../Addons'
+    import Table from '../../components/table'
+    import Topbar from '../../components/topbar'
+    import Addons from '../../components/Addons'
     export default {
         name: "index",
         components: {
