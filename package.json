@@ -7,12 +7,18 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "bootstrap": "^4.3.1",
     "core-js": "^3.3.2",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.16.0",
     "vue": "^2.6.10"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.0.0",
     "@vue/cli-service": "^4.0.0",
+    "css-loader": "^3.2.0",
+    "file-loader": "^4.2.0",
+    "style-loader": "^1.0.0",
     "vue-template-compiler": "^2.6.10"
   },
   "postcss": {
@@ -23,5 +29,17 @@
   "browserslist": [
     "> 1%",
     "last 2 versions"
-  ]
+  ],
+  "description": "## Project setup ``` npm install ```",
+  "main": "babel.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hy1997/vue-mall.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hy1997/vue-mall/issues"
+  },
+  "homepage": "https://github.com/hy1997/vue-mall#readme"
 }
