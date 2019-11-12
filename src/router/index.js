@@ -7,6 +7,9 @@ Vue.use(Router)
 const Dashboard = () => import('../components/Dashboard')
 const ShopList = () => import('../views/shop/shopList')
 const ShopAdd = () => import('../views/shop/shopAdd')
+const MusicHome = () => import('../views/music/musicHome')
+
+
 
 
 export const routes = [
@@ -28,6 +31,11 @@ export const routes = [
         path: '/shopAdd',
         name: ShopAdd,
         component: ShopAdd,
+    },
+    , {
+        path: '/musicHome',
+        name: MusicHome,
+        component: MusicHome,
     },
 
 ]

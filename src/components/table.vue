@@ -6,7 +6,6 @@
                 <i class="fas fa-fw fa-laugh-wink"></i>
                 <span>商品</span>
             </a>
-            <!--商品信息-->
             <Shop></Shop>
         </li>
         <li class="nav-item">
@@ -15,8 +14,15 @@
                 <i class="fas fa-fw fa-laugh-wink"></i>
                 <span>订单</span>
             </a>
-            <!--order-->
             <Order></Order>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#music"
+               aria-expanded="true" aria-controls="music">
+                <i class="fas fa-fw fa-laugh-wink"></i>
+                <span>音乐</span>
+                <Music></Music>
+            </a>
         </li>
     </div>
 </template>
@@ -24,12 +30,13 @@
 <script>
     import Order from '../views/order/order'
     import Shop from '../views/shop/shop'
-
+    import Music from '../views/music/music'
     export default {
         name: "Table",
         components: {
             Order,
             Shop,
+            Music
         },
     }
 </script>
