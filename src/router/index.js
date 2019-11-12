@@ -6,6 +6,8 @@ Vue.use(Router)
 //2.配置路由信息
 const Dashboard = () => import('../components/Dashboard')
 const ShopList = () => import('../views/shop/shopList')
+const ShopAdd = () => import('../views/shop/shopAdd')
+
 
 export const routes = [
     {
@@ -22,7 +24,12 @@ export const routes = [
         path: '/shopList',
         name: ShopList,
         component: ShopList,
+    }, {
+        path: '/shopAdd',
+        name: ShopAdd,
+        component: ShopAdd,
     },
+
 ]
 // 3.创建路由对象
 const router = new Router({

@@ -3,8 +3,7 @@
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">商品信息</h6>
                 <router-link class="collapse-item" to="/shopList">商品列表</router-link>
-                <a class="collapse-item" @click="ListenChild('addShop')">添加商品</a>
-                <a class="collapse-item" @click="ListenChild('classifyShop')">商品分类</a>
+                <router-link class="collapse-item" to="/shopAdd">商品列表</router-link>
             </div>
         </div>
 </template>

@@ -16,19 +16,19 @@
                 <span>订单</span>
             </a>
             <!--order-->
-            <order-list></order-list>
+            <Order></Order>
         </li>
     </div>
 </template>
 
 <script>
-    import OrderList from '../views/order/orderList'
+    import Order from '../views/order/order'
     import Shop from '../views/shop/shop'
 
     export default {
         name: "Table",
         components: {
-            OrderList,
+            Order,
             Shop,
         },
     }

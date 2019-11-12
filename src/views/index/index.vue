@@ -23,6 +23,7 @@
                 <hr class="sidebar-divider">
                 <!--菜单列表-->
                 <Table  v-on:ListenChild="ShowChild" />
+
                 <Addons/>
             </ul>
             <div id="content-wrapper" class="d-flex flex-column">
