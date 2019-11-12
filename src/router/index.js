@@ -4,18 +4,24 @@ import Router from 'vue-router'
 // 1.安装VueRouter
 Vue.use(Router)
 //2.配置路由信息
-const Index = () => import('../views/index/index')
+const Dashboard = () => import('../components/Dashboard')
+const ShopList = () => import('../views/shop/shopList')
 
 export const routes = [
     {
         path: '/',
-        name: Index,
-        component: Index,
+        name: Dashboard,
+        component: Dashboard,
     },
     {
         path: '/index',
-        name: Index,
-        component: Index,
+        name: Dashboard,
+        component: Dashboard,
+    },
+    {
+        path: '/shopList',
+        name: ShopList,
+        component: ShopList,
     },
 ]
 // 3.创建路由对象

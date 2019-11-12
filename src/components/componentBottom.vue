@@ -8,8 +8,6 @@
         <span slot="name">天猫超市</span>
         <img src="https://img.alicdn.com/tfs/TB10UHQaNjaK1RjSZKzXXXVwXXa-183-144.png?getAvatar=1_.webp" slot="icon"/>
         <span slot="name">天猫超市</span>
-
-
     </bottom>
 
 </template>

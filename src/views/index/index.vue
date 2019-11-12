@@ -22,50 +22,37 @@
                 <!-- 分割线 -->
                 <hr class="sidebar-divider">
                 <!--菜单列表-->
-                <Table/>
+                <Table  v-on:ListenChild="ShowChild" />
                 <Addons/>
             </ul>
             <div id="content-wrapper" class="d-flex flex-column">
-                   <!--上导航栏-->
                 <Topbar></Topbar>
-                <!--右边页面vue组件-->
-                    <Dashboard/>
-                <!-- 底部内容 -->
-                    <Footer/>
+                <router-view></router-view>
+                 <Footer/>
             </div>
         </div>
-        <!-- Scroll to Top Button-->
-        <a class="scroll-to-top rounded" href="#page-top">
-            <i class="fas fa-angle-up"></i>
-        </a>
-
     </div>
 </template>
 
 <script>
-    import Dashboard from '../../components/Dashboard.vue'
-    import Footer from './footer.vue'
     import Table from '../../components/table'
-    import Topbar from '../../components/topbar'
     import Addons from '../../components/Addons'
+    import Topbar from '../../components/topbar'
+    import Footer from '../index/footer'
+
     export default {
         name: "index",
         components: {
-            Dashboard,
-            Footer,
             Table,
+            Addons,
             Topbar,
-            Addons
-
+            Footer
         },
 
         methods: {
-            childClick: function(data) {
-                // childValue就是子组件传过来的值
-                alert(data)
-                if('listShop'==data.message){
-                    this.shopList=true;
-                }
+            ShowChild: function (data) {
+                this.data = data
+                console.log("data:" + data)
             }
         }
     }
@@ -74,10 +61,6 @@
 
 <style scoped>
 
-    @import '../../assets/vendor/fontawesome-free/css/all.min.css';
-    /*引入公共样式*/
-    @import 'https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i';
-    /*引入公共样式*/
-    @import '../../assets/css/sb-admin-2.min.css'; /*引入公共样式*/
+
 
 </style>

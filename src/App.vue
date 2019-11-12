@@ -1,16 +1,16 @@
 <template>
-    <router-view></router-view>
+    <div class="app">
+        <Index/>
+    </div>
 </template>
 
 <script>
-    import componentBottom from './components/componentBottom.vue'
-    import Dashboard from './components/Dashboard.vue'
 
+    import Index from './views/index/index'
     export default {
         name: 'app',
         components: {
-            componentBottom,
-            Dashboard
+            Index
         }
 
     }
